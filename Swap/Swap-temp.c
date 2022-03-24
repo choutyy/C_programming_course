@@ -1,22 +1,21 @@
 #include<stdio.h>
 int main() {
-  float first, second, temp;
-  printf("Enter first number: ");
-  scanf("%f", &first);
-  printf("Enter second number: ");
-  scanf("%f", &second);
-
-  // value of first is assigned to temp
-  temp = first;
-
-  // value of second is assigned to first
-  first = second;
-
-  // value of temp (initial value of first) is assigned to second
-  second = temp;
-
-  // %.2lf displays number up to 2 decimal points
-  printf("\nAfter swapping, first number = %.2f\n", first);
-  printf("After swapping, second number = %.2f", second);
+  double first, second, third, temp;
+  printf("Enter three number: ");
+  scanf("%lf%lf%lf", &first, &second, &third);
+  printf("Before sorting: %.2f  %.2f  %.2f\n", first, second, third);
+  // compare first and second
+  if (second<first){
+    temp = second; second = first; first = temp;
+  }
+  // compare first and third
+    if (third<first){
+    temp = third; third = first; first = temp;
+    }
+  // compare second and third
+    if (third<second){
+    temp = third; third = second; second = temp;
+    }
+  printf("After sorting: %.2f  %.2f  %.2f\n", first, second, third);
   return 0;
 }

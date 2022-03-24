@@ -9,14 +9,16 @@ int main()
 
     printf("\n");
     //call array++
-    increase(n);
+    //increase(n);B
      for(int i =0; i<3; i++)
         printf("%d ",n[i]);
     return 0;
 }
 
+/*
 int increase(int n[]){   
     for(int i =0; i<3; i++)
         n[i]++;
     return 0;
 }
+*/

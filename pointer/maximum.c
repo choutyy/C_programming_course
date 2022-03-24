@@ -15,7 +15,7 @@ int main()
     return 0;
 }
 
-int max3(int array[3])
+int max3(int *array)
 {
     int max = array[0];  // assume the first one is maximum
     for(int i=1; i<3; i++){
