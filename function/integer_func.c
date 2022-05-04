@@ -1,5 +1,5 @@
 #include<stdio.h>
-int increase(int n);
+int increase(int);
 
 int main()
 {   
@@ -12,6 +12,6 @@ int main()
 
 int increase(int n)
 {   
-    n++;
-    return n++;
+    // return ++n;
+    return n++; 
 }
